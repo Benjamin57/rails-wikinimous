@@ -1,7 +1,7 @@
 <% @articles.each do |article| %>
   <article>
    <h3><%= link_to "#{article.title}", article_path(article) %></h3>
-   <p><%= article.content %></p>
+   <p><%= article.content.truncate_words(15) %></p>
   </article>
 <% end %>
 
