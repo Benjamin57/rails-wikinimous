@@ -11,6 +11,6 @@ require 'faker'
 10.times do
   Article.create(
     title: Faker::Artist.name,
-    content: Faker::ChuckNorris.fact
+    content: Faker::Lorem.paragraph(5)
   )
 end
